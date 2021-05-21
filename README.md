@@ -15,7 +15,7 @@ Souped Up WP_Config class to help make wp-config.php a bit more manageable
    * quickly set your content and wp dir using the WP_DIR and and WP_CONTENT options
    ** * Unofficial settings used to setup custom wp & wp-content dirs
    */
-  require_once( __DIR__ . '/vendor/knerd/wp-config/class.php' );
+  require_once( __DIR__ . '/vendor/maddenmedia/wp-config/class.php' );
 
   new WP_Config([
     // CONFIG SCHEME & FILE STRUCTURE 

@@ -1,4 +1,5 @@
 {
-  "name": "knerd/wp-config",
+  "name": "maddenmedia/mm-wp-config",
+  "version": "0.0.4",
   "type": "library"
 }
