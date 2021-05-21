@@ -181,9 +181,21 @@
      * @return void
      */
     private function load_local_config(){
+      $this->load_platform_config();
       $local   = $this->DIR . "/wp-config-local.php";
       $secrets = $this->DIR . "/wp-secrets.php";
       $this->require( $local, $secrets ); 
+    }
+
+    /**
+     * load_platform_config
+     * loads platform configuration file if found
+     *
+     * @return void
+     */
+    function load_platform_config(){
+      $platform = $this->DIR . "/wp-config-platform.php";
+      $this->require( $platform ); 
     }
 
     /**
