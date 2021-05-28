@@ -159,6 +159,7 @@
     public function autoload(){
       $this->define_constants();
       $this->require( "{$this->DIR}/{$this->VENDOR_DIR}/autoload.php" ); 
+      $this->load_platform_config();
     }
     
     /**
@@ -183,7 +184,6 @@
      * @return void
      */
     private function load_local_config(){
-      $this->load_platform_config();
       $local   = $this->DIR . "/wp-config-local.php";
       $secrets = $this->DIR . "/wp-secrets.php";
       $this->require( $local, $secrets ); 
