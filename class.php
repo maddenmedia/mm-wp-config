@@ -157,9 +157,9 @@
      * @return void
      */
     public function autoload(){
-      $this->define_constants();
       $this->require( "{$this->DIR}/{$this->VENDOR_DIR}/autoload.php" ); 
       $this->load_platform_config();
+      $this->define_constants();
     }
     
     /**
